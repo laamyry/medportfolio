@@ -5,7 +5,7 @@ import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icon
 export default function Contact() {
   return (
     <section id="contact" className="bg-gray-900 pt-6">
-      <div className="container mx-auto text-center text-white relative">
+      <div className=" mx-auto text-center text-white relative">
         <Image src="/images/footer-logo.svg" alt="Med Laamyry's Portfolio Logo" className="mx-auto mb-10 w-18" width={80} height={80} />
 
         <div className="flex justify-center space-x-10 text-lg">
