@@ -18,9 +18,9 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="sm:mt-96 bg-white h-screen flex sm:w-screen sm:flex-col items-center mx-auto 3xl:w-[80%] border sm:justify-center">
-      <div className=" mx-auto text-center border sm:flex sm:justify-center ">
-        <div className="flex flex-col lg:flex-row mt-24 border sm:justify-center ">
+    <section id="contact" className="sm:mt-96 bg-white h-screen flex sm:w-screen sm:flex-col items-center mx-auto 3xl:w-[80%] sm:justify-center">
+      <div className=" mx-auto text-center sm:flex sm:justify-center ">
+        <div className="flex flex-col lg:flex-row mt-24 sm:justify-center ">
           {/* Contact Information Section */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center p-12 sm:w-screen ">
             <h3 className="text-4xl font-bold text-black relative flex ml-12 mb-20 sm:ml-0 sm:justify-center">
