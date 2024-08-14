@@ -4,6 +4,7 @@ import Works from '../components/Works';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
 import Navbar from '../components/Navbar';
+import Clinets from '../components/clinets';
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Works />
       <Contact /> 
+      <Clinets />
       <Footer />
     </>
   );
