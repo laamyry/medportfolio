@@ -5,7 +5,7 @@ export default function About() {
     <section id="about" className="bg-gray-100 sm:pt-10 sm:w-screen flex sm:flex sm:flex-col h-screen items-center ">
       <div className="3xl:w-[80%] sm:c justify-center pt-20 m-auto flex h-full items-center gap-20 sm:flex-col sm:gap-5 sm:w-96 ">
         <div className="w-1/2 sm:w-80">
-          <div className="relative flex sm:justify-center">
+          <div className="relative flex sm:justify-center w-fit">
             <Image src="/images/profile.png" alt="about" width={600} height={400} className="object-cover shadow-lg float-right z-40 ml-32 sm:ml-0 sm:float-left" />
             <div className="bg-gray-900 absolute right-12 sm:right-6 -top-12 w-5/6 h-full sm:-top-5"></div>
           </div>

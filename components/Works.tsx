@@ -56,16 +56,16 @@ export default function Works() {
   };
 
   return (
-    <section id="works" className="bg-gray-100 pt-24 ">
-      <div className="container mx-auto text-center px-5 3xl:w-[80%]">
-        <h2 className="text-4xl font-bold text-black relative flex justify-center">
-          <span className="z-30 uppercase">My Work</span>
+    <section id="works" className="bg-gray-100 pt-24 sm:mt-96  sm:w-screen sm:h-screen flex sm:flex sm:flex-col sm:justify-center">
+      <div className=" mx-auto text-center px-5 3xl:w-[80%]  sm:w-96">
+        <h2 className="text-4xl font-bold text-black relative flex justify-center ">
+          <span className="z-30 uppercase sm:w-96">My Work</span>
           <div className="mt-6 absolute bottom-20 opacity-10 h-3">
             <Image src="/images/dots.svg" alt="Decorative dots pattern" width={300} height={200} className="text-red-500" />
           </div>
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-10 mt-28">
+        <div className="flex flex-wrap justify-center gap-10 mt-28 ">
           {projects.slice(0, visibleProjects).map((project) => (
             <Link key={project.id} href={project.link} target="_blank" rel="noopener noreferrer">
               <div className="relative group flex-shrink-0" style={{ flexBasis: "calc(33.333% - 1.5rem)" }}>
