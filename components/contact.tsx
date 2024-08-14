@@ -18,7 +18,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-white py-5">
+    <section id="contact" className="bg-white h-screen flex items-center mx-auto 3xl:w-[80%]">
       <div className="container mx-auto text-center">
         <div className="flex flex-col lg:flex-row mt-24">
           {/* Contact Information Section */}

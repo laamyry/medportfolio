@@ -16,9 +16,9 @@ export default function Navbar() {
   };
 
   return (
-    <div className=" flex justify-center">
+    <div className=" flex justify-center border">
       <nav className="bg-gray-950 text-white py-4 fixed top-0 left-0 w-full z-50 bg-opacity-80">
-        <div className=" mx-auto flex justify-between items-center px-16">
+        <div className=" mx-auto flex justify-between items-center px-16 3xl:px-48">
           <Link href="#home" className="">
             <Image src="/images/header-logo.svg" alt="Logo" className="mx-auto w-40" width={80} height={80} />
           </Link>

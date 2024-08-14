@@ -81,19 +81,19 @@ const projects = [
 ];
 
 export default function Works() {
-  const [visibleProjects, setVisibleProjects] = useState(6); // Display the first 6 projects (2 rows with 3 columns each)
+  const [visibleProjects, setVisibleProjects] = useState(3); // Display the first 3 projects
 
   const loadMoreProjects = () => {
-    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 6); // Load 6 more projects on each click
+    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 3); // Load 3 more projects on each click
   };
 
   const collapseProjects = () => {
-    setVisibleProjects(6); // Reset to show only the first 6 projects
+    setVisibleProjects(3); // Reset to show only the first 3 projects
   };
 
   return (
-    <section id="works" className="bg-gray-100 pt-24">
-      <div className="container mx-auto text-center px-5">
+    <section id="works" className="bg-gray-100 pt-24 ">
+      <div className="container mx-auto text-center px-5 3xl:w-[80%]">
         <h2 className="text-4xl font-bold text-black relative flex justify-center">
           <span className="z-30 uppercase">My Work</span>
           <div className="mt-6 absolute bottom-20 opacity-10 h-3">
@@ -101,18 +101,19 @@ export default function Works() {
           </div>
         </h2>
 
-        <div className="grid grid-cols-3 gap-6 mt-20">
+        <div className="flex flex-wrap justify-center gap-10 mt-28">
           {projects.slice(0, visibleProjects).map((project) => (
             <Link key={project.id} href={project.link} target="_blank" rel="noopener noreferrer">
-              <div className="relative group">
-                <Image src={project.image} alt={`Preview of ${project.title}`} width={300} height={300} className="w-full h-full object-cover transition-all duration-300" />
-                <div className="absolute inset-0 flex items-center justify-center text-center bg-primary  bg-opacity-0 group-hover:bg-opacity-30 group-hover:backdrop-blur-sm transition-all duration-1000">
+              <div className="relative group flex-shrink-0" style={{ flexBasis: 'calc(33.333% - 1.5rem)' }}>
+                <Image src={project.image} alt={`Preview of ${project.title}`} width={300} height={200} className="w-full h-auto object-cover transition-all duration-300" />
+                <div className="absolute inset-0 flex items-center justify-center text-center bg-primary bg-opacity-0 group-hover:bg-opacity-30 group-hover:backdrop-blur-sm transition-all duration-1000">
                   <span className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">{project.title}</span>
                 </div>
               </div>
             </Link>
           ))}
         </div>
+
         {visibleProjects < projects.length ? (
           <button className="rounded-full my-10 px-8 py-4 bg-primary text-gray-900 font-semibold hover:bg-gray-900 hover:text-white transition ease-in-out duration-500" onClick={loadMoreProjects}>
             Load More
