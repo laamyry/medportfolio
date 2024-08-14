@@ -25,57 +25,21 @@ const projects = [
   },
   {
     id: 4,
-    title: "Social media MARVIDA",
-    image: "/images/project1.jpg",
-    link: "https://www.behance.net/gallery/204461085/Social-media-MARVIDA",
+    title: "Travis Rice : Attorney at law logo",
+    image: "/images/project5.jpg",
+    link: "https://www.behance.net/gallery/101104229/Travis-Rice-Attorney-at-law-logo",
   },
   {
     id: 5,
-    title: "Social media MARVIDA",
-    image: "/images/project1.jpg",
-    link: "https://www.behance.net/gallery/204461085/Social-media-MARVIDA",
+    title: "Al-matai for external recrutement services",
+    image: "/images/project4.jpg",
+    link: "https://www.behance.net/gallery/87167825/AL-Matai-FOR-EXTERNAL-RECRUTEMENT-SERVICES",
   },
   {
     id: 6,
-    title: "Social media MARVIDA",
-    image: "/images/project1.jpg",
-    link: "https://www.behance.net/gallery/204461085/Social-media-MARVIDA",
-  },
-  {
-    id: 7,
-    title: "Social media MARVIDA",
-    image: "/images/project1.jpg",
-    link: "https://www.behance.net/gallery/204461085/Social-media-MARVIDA",
-  },
-  {
-    id: 8,
-    title: "Social media MARVIDA",
-    image: "/images/project1.jpg",
-    link: "https://www.behance.net/gallery/204461085/Social-media-MARVIDA",
-  },
-  {
-    id: 9,
-    title: "Social media MARVIDA",
-    image: "/images/project1.jpg",
-    link: "https://www.behance.net/gallery/204461085/Social-media-MARVIDA",
-  },
-  {
-    id: 10,
-    title: "Social media MARVIDA",
-    image: "/images/project1.jpg",
-    link: "https://www.behance.net/gallery/204461085/Social-media-MARVIDA",
-  },
-  {
-    id: 11,
-    title: "Social media MARVIDA",
-    image: "/images/project1.jpg",
-    link: "https://www.behance.net/gallery/204461085/Social-media-MARVIDA",
-  },
-  {
-    id: 12,
-    title: "Social media MARVIDA",
-    image: "/images/project1.jpg",
-    link: "https://www.behance.net/gallery/204461085/Social-media-MARVIDA",
+    title: "Acadewix logo",
+    image: "/images/project6.jpg",
+    link: "https://www.behance.net/gallery/101104487/acadewix-logo",
   },
   // Add more projects as needed
 ];
@@ -104,7 +68,7 @@ export default function Works() {
         <div className="flex flex-wrap justify-center gap-10 mt-28">
           {projects.slice(0, visibleProjects).map((project) => (
             <Link key={project.id} href={project.link} target="_blank" rel="noopener noreferrer">
-              <div className="relative group flex-shrink-0" style={{ flexBasis: 'calc(33.333% - 1.5rem)' }}>
+              <div className="relative group flex-shrink-0" style={{ flexBasis: "calc(33.333% - 1.5rem)" }}>
                 <Image src={project.image} alt={`Preview of ${project.title}`} width={300} height={200} className="w-full h-auto object-cover transition-all duration-300" />
                 <div className="absolute inset-0 flex items-center justify-center text-center bg-primary bg-opacity-0 group-hover:bg-opacity-30 group-hover:backdrop-blur-sm transition-all duration-1000">
                   <span className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">{project.title}</span>
