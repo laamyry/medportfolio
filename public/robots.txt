@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /api/             # Block search engines from indexing API routes (if any)
+Disallow: /admin/           # Block search engines from indexing any admin section (if applicable)
+Allow: /                    # Allow search engines to index all other paths
+Sitemap: https://medlaamyry.com/sitemap.xml  # Link to your sitemap if you have one
