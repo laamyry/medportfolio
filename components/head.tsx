@@ -1,17 +1,11 @@
 import Head from "next/head";
-import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
-export const metadata = {
-  title: "Med Laamyry Portfolio",
-  description: "A professional portfolio website for Med Laamyry",
-};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function Home() {
   return (
-    <html lang="en">
+    <>
       <Head>
         <title>Med Laamyry Portfolio</title>
-        <meta name="description" content="Med Laamyry is a skilled Graphic and Motion Designer with expertise in creating stunning visuals." />
+        <meta name="description" content="Med Laamyry is a skilled Graphic and Motion Designer." />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -27,12 +21,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </Head>
-      <body>
-        <main className=" mx-auto">
-          {children}
-          <Analytics />
-        </main>
-      </body>
-    </html>
+    </>
   );
 }
