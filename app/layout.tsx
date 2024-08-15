@@ -1,6 +1,7 @@
 import Head from "next/head";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "Med Laamyry Portfolio",
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="mx-auto">
           {children}
           <Analytics />
+          <GoogleAnalytics gaId="G-BHYTSWWG5W" />
         </main>
       </body>
     </html>
