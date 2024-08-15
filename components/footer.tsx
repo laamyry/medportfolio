@@ -2,20 +2,24 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
 
-export default function Contact() {
+export default function Footer() {
+  // Obfuscate email and phone number
+  const email = "contact" + "@" + "medlaamyry.com";
+  const phone = "+212 619 367 728";
+
   return (
     <section id="contact" className="bg-gray-900 pt-6">
-      <div className=" mx-auto text-center text-white relative">
+      <div className="mx-auto text-center text-white relative">
         <Image src="/images/footer-logo.svg" alt="Med Laamyry's Portfolio Logo" className="mx-auto mb-10 w-18" width={80} height={80} />
 
         <div className="flex justify-center space-x-10 text-lg">
           <div className="flex items-center space-x-2">
             <FaEnvelope size={20} aria-hidden="true" />
-            <p>contact@medlaamyry.com</p>
+            <a href={`mailto:${email}`} className="hover:underline">{email}</a>
           </div>
           <div className="flex items-center space-x-2">
             <FaPhone size={20} aria-hidden="true" />
-            <p>+212 619 367 728</p>
+            <a href={`tel:${phone}`} className="hover:underline">{phone}</a>
           </div>
         </div>
 

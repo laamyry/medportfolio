@@ -1,5 +1,5 @@
 "use client";
-// components/contact.tsx
+
 import Image from "next/image";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 import { useForm, ValidationError } from '@formspree/react';
@@ -17,28 +17,34 @@ export default function Contact() {
     );
   }
 
+  // Obfuscate email and phone number
+  const email = "contact" + "@" + "medlaamyry.com";
+  const phone = "+212 619 367 728";
+
   return (
     <section id="contact" className="sm:mt-96 bg-white h-screen flex sm:w-screen sm:flex-col items-center mx-auto 3xl:w-[80%] sm:justify-center">
-      <div className=" mx-auto text-center sm:flex sm:justify-center ">
-        <div className="flex flex-col lg:flex-row mt-24 sm:justify-center ">
+      <div className=" mx-auto text-center sm:flex sm:justify-center">
+        <div className="flex flex-col lg:flex-row mt-24 sm:justify-center">
           {/* Contact Information Section */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center p-12 sm:w-screen ">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center p-12 sm:w-screen">
             <h3 className="text-4xl font-bold text-black relative flex ml-12 mb-20 sm:ml-0 sm:justify-center">
-              <span className="uppercase ">Contact Me</span>
-              <div className="mt-6 absolute bottom-20 opacity-10 h-3 ">
+              <span className="uppercase">Contact Me</span>
+              <div className="mt-6 absolute bottom-20 opacity-10 h-3">
                 <Image src="/images/dots.svg" alt="Decorative dots pattern" width={300} height={200} className="text-red-500" />
               </div>
             </h3>
-            <h3 className="text-3xl text-justify text-black mb-6 ml-12 sm:ml-0 sm:text-center">Want to reach me? Fill out the form on the side or use the department email below.</h3>
+            <h3 className="text-3xl text-justify text-black mb-6 ml-12 sm:ml-0 sm:text-center">
+              Want to reach me? Fill out the form on the side or use the department email below.
+            </h3>
             {/* Icons */}
             <div className="flex flex-col gap-3 text-lg ml-12 sm:justify-center sm:ml-0 mb-20">
               <div className="flex items-center space-x-2 sm:justify-center">
                 <FaEnvelope size={26} aria-hidden="true" />
-                <p>contact@medlaamyry.com</p>
+                <a href={`mailto:${email}`} className="hover:underline">{email}</a>
               </div>
-              <div className="flex items-center space-x-2 sm:justify-center ">
+              <div className="flex items-center space-x-2 sm:justify-center">
                 <FaPhone size={26} aria-hidden="true" />
-                <p>+212 619 367 728</p>
+                <a href={`tel:${phone}`} className="hover:underline">{phone}</a>
               </div>
             </div>
           </div>
