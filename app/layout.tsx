@@ -14,11 +14,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* Basic Meta Tags */}
         <title>Med Laamyry Portfolio</title>
-        <meta name="description" content="Med Laamyry is a skilled Graphic and Motion Designer with expertise in creating stunning visuals." />
+        <meta name="description" content="Med Laamyry is a skilled front-end developer and Graphic and Motion Designer with expertise in creating stunning visuals." />
 
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Med Laamyry Portfolio" />
-        <meta property="og:description" content="Med Laamyry is a skilled Graphic and Motion Designer with expertise in creating stunning visuals." />
+        <meta property="og:description" content="This is Med Laamyry a skilled Graphic and Motion Designer with expertise in creating stunning visuals." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://medlaamyry.com" />
         <meta property="og:site_name" content="Med Laamyry Portfolio" />
@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Med Laamyry Portfolio" />
-        <meta name="twitter:description" content="Med Laamyry is a skilled Graphic and Motion Designer with expertise in creating stunning visuals." />
+        <meta name="twitter:description" content="Med Laamyry is a skilled Graphic and Motion Designer and front-end developer with expertise in creating stunning visuals." />
         <meta name="twitter:site" content="@medlaamyry" />
 
         {/* Canonical Link Tag */}
